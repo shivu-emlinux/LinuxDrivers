@@ -1,0 +1,13 @@
+#ifndef __UART_IOCTL_H__
+#define __UART_IOCTL_H__
+
+#define EVLSI_UART_MAX_CMD 1
+
+#define EVLSI_UART_MIN_CMD 1
+
+#define EVLSI_UART_IOC_MAGIC 'E'
+
+#define READ_REGISTERS _IOR(EVLSI_UART_IOC_MAGIC, 1, int)
+#define WRITE_REGISTERS _IOW(EVLSI_UART_IOC_MAGIC, 2, int)
+
+#endif // __UART_IOCTL_H__
